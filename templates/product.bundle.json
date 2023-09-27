@@ -1,0 +1,561 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.genre.value }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judgeme_preview_badge_product_page_3a03e245": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "a89ee6ad-035d-48d4-b0d7-fd913da45a1a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.custom_hammer.value }}",
+            "icon": "lock",
+            "content": "",
+            "page": ""
+          }
+        },
+        "cc179cb6-8d5a-4105-94ea-3943fbe3d216": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "3 Day Money-Back Guarantee",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "212293d5-0736-4ed6-a946-1b305cbb7094": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Instant Download & Access Anytime",
+            "icon": "box",
+            "content": "",
+            "page": ""
+          }
+        },
+        "ff4acb62-d475-4dcf-a9ab-211e5743d498": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "100% Royalty-Free",
+            "icon": "price_tag",
+            "content": "",
+            "page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judgeme_preview_badge_product_page_3a03e245",
+        "price",
+        "a89ee6ad-035d-48d4-b0d7-fd913da45a1a",
+        "cc179cb6-8d5a-4105-94ea-3943fbe3d216",
+        "212293d5-0736-4ed6-a946-1b305cbb7094",
+        "ff4acb62-d475-4dcf-a9ab-211e5743d498",
+        "buy_buttons",
+        "description"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "2071bf88-f4e6-488c-a7ba-95644442c692": {
+      "type": "product-resources",
+      "blocks": {
+        "d89e6eda-cedd-46f5-a8e3-527acb857de4": {
+          "type": "block",
+          "settings": {
+            "number": "1000",
+            "title": "Samples",
+            "text": "Presets are out of the box loud and fat. Need no additional processing unlike most companies."
+          }
+        },
+        "d6b7cd80-790f-4e44-a5a8-97f7bfba697d": {
+          "type": "block",
+          "settings": {
+            "number": "10",
+            "title": "Ableton Instruments",
+            "text": "Presets are out of the box loud and fat. Need no additional processing unlike most companies."
+          }
+        },
+        "a8bb5b48-3207-4760-af4f-76bd4f4d5e0a": {
+          "type": "block",
+          "settings": {
+            "number": "200",
+            "title": "serum presets",
+            "text": "Presets are out of the box loud and fat. Need no additional processing unlike most companies."
+          }
+        },
+        "6cb1915a-48f2-4f5d-869f-1280a7ae3d1e": {
+          "type": "block",
+          "settings": {
+            "number": "3",
+            "title": "Project files",
+            "text": "Open these up, learn about whats going on inside or use this as a starting point to write your own tunes."
+          }
+        },
+        "0465262d-bc32-4219-b8c0-44b2131716e8": {
+          "type": "block",
+          "settings": {
+            "number": "25",
+            "title": "Processing racks",
+            "text": "Instrument racks allow you to create endless variations and combinations of samples."
+          }
+        }
+      },
+      "block_order": [
+        "d89e6eda-cedd-46f5-a8e3-527acb857de4",
+        "d6b7cd80-790f-4e44-a5a8-97f7bfba697d",
+        "a8bb5b48-3207-4760-af4f-76bd4f4d5e0a",
+        "6cb1915a-48f2-4f5d-869f-1280a7ae3d1e",
+        "0465262d-bc32-4219-b8c0-44b2131716e8"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "All the essential Hard Dance production resources in one place. No fillers or fluff.",
+        "color_scheme": "accent-2",
+        "padding_top": 92,
+        "padding_bottom": 20
+      }
+    },
+    "00b21ba0-4b36-4bf2-a938-ab68f2e4fb95": {
+      "type": "product-widget",
+      "blocks": {
+        "d1ce938a-9d56-4f44-b652-453685f7144d": {
+          "type": "title",
+          "settings": {
+            "title": "{{ product.metafields.custom.widget.value.title.value }}"
+          }
+        },
+        "9e27885a-be7f-4563-b75c-058a0c7d5571": {
+          "type": "image",
+          "settings": {
+            "img": "{{ product.metafields.custom.widget.value.img.value }}"
+          }
+        },
+        "5944d0a2-5ad6-4ec1-a8bc-e5c2ebd85c11": {
+          "type": "button",
+          "settings": {
+            "button_text": ""
+          }
+        },
+        "a35ea509-456b-4bd9-a3a2-870512716328": {
+          "type": "title",
+          "settings": {
+            "title": "{{ product.metafields.custom.widget.value.title_2.value }}"
+          }
+        },
+        "d38aa20f-c186-4fca-a86e-1a27aae4702e": {
+          "type": "custom_code",
+          "settings": {
+            "code": "{{ product.metafields.custom.widget.value.custom_code.value }}"
+          }
+        },
+        "c24242eb-717d-4451-8121-87c3cd8c65e7": {
+          "type": "title",
+          "settings": {
+            "title": "{{ product.metafields.custom.widget.value.title_3.value }}"
+          }
+        },
+        "b2cad3da-b067-4903-b0a5-a92d93db395a": {
+          "type": "video",
+          "settings": {
+            "video_url": "{{ product.metafields.custom.widget.value.video_link.value }}",
+            "cover_image": "{{ product.metafields.custom.widget.value.poster_img.value }}",
+            "enable_video_looping": false
+          }
+        }
+      },
+      "block_order": [
+        "d1ce938a-9d56-4f44-b652-453685f7144d",
+        "9e27885a-be7f-4563-b75c-058a0c7d5571",
+        "5944d0a2-5ad6-4ec1-a8bc-e5c2ebd85c11",
+        "a35ea509-456b-4bd9-a3a2-870512716328",
+        "d38aa20f-c186-4fca-a86e-1a27aae4702e",
+        "c24242eb-717d-4451-8121-87c3cd8c65e7",
+        "b2cad3da-b067-4903-b0a5-a92d93db395a"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Mask_group_1.jpg"
+      }
+    },
+    "691ce437-e795-442c-b1a0-f42f880b6765": {
+      "type": "section-reviews",
+      "blocks": {
+        "d815f3b8-1cf9-4940-8914-af229815bbdd": {
+          "type": "review",
+          "settings": {
+            "text": "<p>I can't express how much these serum presets have accelerated my workflow. They're a fantastic starting point for my songs.<\/p>",
+            "img": "shopify:\/\/shop_images\/Ellipse_15.png",
+            "name": "Some Name Here"
+          }
+        },
+        "8810027b-d0ec-4160-9ffa-b059ab4ce170": {
+          "type": "review",
+          "settings": {
+            "text": "<p>I can't express how much these serum presets have accelerated my workflow. They're a fantastic starting point for my songs. I can't express how much these serum presets have accelerated my workflow. They're a fantastic starting point for my songs.<\/p>",
+            "img": "shopify:\/\/shop_images\/percussion-generator-hard-dance-894401.jpg",
+            "name": "Some Name Here"
+          }
+        }
+      },
+      "block_order": [
+        "d815f3b8-1cf9-4940-8914-af229815bbdd",
+        "8810027b-d0ec-4160-9ffa-b059ab4ce170"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "trusted by industry professionals",
+        "color_scheme": "accent-2",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "529b6383-6efb-47c8-b893-efd76b0f4b12": {
+      "type": "multicolumn-custom",
+      "blocks": {
+        "template--20996911595795__529b6383-6efb-47c8-b893-efd76b0f4b12-column-1": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"69\" height=\"68\" viewBox=\"0 0 69 68\" fill=\"none\">\n<path d=\"M15 27.0938V40.9059C15 42.08 14.0491 43.0309 12.875 43.0309C11.7009 43.0309 10.75 42.08 10.75 40.9059V27.0938C10.75 25.9197 11.7009 24.9688 12.875 24.9688C14.0491 24.9688 15 25.9197 15 27.0938ZM23.5 18.5938C22.3259 18.5938 21.375 19.5447 21.375 20.7188V47.2809C21.375 48.455 22.3259 49.4059 23.5 49.4059C24.6741 49.4059 25.625 48.455 25.625 47.2809V20.7188C25.625 20.1556 25.4019 19.6138 25.0034 19.2153C24.605 18.8169 24.0631 18.5938 23.5 18.5938ZM55.375 24.9688C54.2009 24.9688 53.25 25.9197 53.25 27.0938V40.9059C53.25 42.08 54.2009 43.0309 55.375 43.0309C56.5491 43.0309 57.5 42.08 57.5 40.9059V27.0938C57.5 26.5306 57.2769 25.9888 56.8784 25.5903C56.48 25.1919 55.9381 24.9688 55.375 24.9688ZM44.75 18.5938C43.5759 18.5938 42.625 19.5447 42.625 20.7188V47.2809C42.625 48.455 43.5759 49.4059 44.75 49.4059C45.9241 49.4059 46.875 48.455 46.875 47.2809V20.7188C46.875 20.1556 46.6519 19.6138 46.2534 19.2153C45.855 18.8169 45.3131 18.5938 44.75 18.5938ZM34.125 12.2188C32.9509 12.2188 32 13.1697 32 14.3438V53.6559C32 54.83 32.9509 55.7809 34.125 55.7809C35.2991 55.7809 36.25 54.83 36.25 53.6559V14.3438C36.25 13.7806 36.0269 13.2388 35.6284 12.8403C35.23 12.4419 34.6881 12.2188 34.125 12.2188Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Signature Sound",
+            "text": "<p>Thousands of carefully crafted sounds to combine into your signature style.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20996911595795__529b6383-6efb-47c8-b893-efd76b0f4b12-column-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"53\" height=\"53\" viewBox=\"0 0 53 53\" fill=\"none\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M21.5314 49.6875H31.4689C32.384 49.6875 33.1252 48.9463 33.1252 48.0312C33.1252 47.1161 32.384 46.375 31.4689 46.375H21.5314C20.6163 46.375 19.8752 47.1161 19.8752 48.0312C19.8752 48.9463 20.6163 49.6875 21.5314 49.6875ZM18.2189 35.9965V38.0937C18.2189 39.4125 18.7427 40.6754 19.6744 41.607C20.606 42.5387 21.8689 43.0625 23.1877 43.0625H29.8127C31.1315 43.0625 32.3944 42.5387 33.326 41.607C34.2576 40.6754 34.7814 39.4125 34.7814 38.0937V35.9965C40.2055 33.0504 43.8911 27.3034 43.8911 20.7034C43.8911 11.1056 36.0985 3.31299 26.5007 3.31299C16.9029 3.31299 9.11035 11.1056 9.11035 20.7034C9.11035 27.3034 12.7955 33.0508 18.22 35.9965H18.2189ZM21.5314 34.9758C21.5314 34.332 21.1588 33.7481 20.5749 33.4749C15.7615 31.2348 12.422 26.3548 12.422 20.7029C12.422 12.9331 18.73 6.62506 26.4998 6.62506C34.2696 6.62506 40.5777 12.9331 40.5777 20.7029C40.5777 26.3548 37.2382 31.2346 32.4247 33.4749C31.8408 33.7481 31.4682 34.332 31.4682 34.9758V38.0937C31.4682 38.5326 31.2943 38.955 30.9837 39.2655C30.6732 39.576 30.2509 39.7499 29.812 39.7499H23.187C22.7481 39.7499 22.3257 39.576 22.0152 39.2655C21.7046 38.9549 21.5307 38.5326 21.5307 38.0937L21.5314 34.9758ZM19.8752 19.8751C19.8752 16.2189 22.844 13.2501 26.5002 13.2501C27.4153 13.2501 28.1564 12.5089 28.1564 11.5938C28.1564 10.6787 27.4153 9.93757 26.5002 9.93757C21.0157 9.93757 16.5627 14.3908 16.5627 19.8751C16.5627 20.7902 17.3038 21.5313 18.2189 21.5313C19.134 21.5313 19.8752 20.7902 19.8752 19.8751Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Inspiration",
+            "text": "<p>Say goodbye to writer's block. This production suite is designed to obliterate any unproductivity and fuel your creativity.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20996911595795__529b6383-6efb-47c8-b893-efd76b0f4b12-column-3": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"49\" height=\"49\" viewBox=\"0 0 49 49\" fill=\"none\">\n<path d=\"M24.4999 46.8944C12.294 46.8944 2.10547 36.7058 2.10547 24.4999C2.10547 12.294 12.294 2.10547 24.4999 2.10547C36.7058 2.10547 46.8944 12.294 46.8944 24.4999C46.8944 36.7058 36.7058 46.8944 24.4999 46.8944ZM24.4999 5.16797C13.8405 5.16797 5.16797 13.8405 5.16797 24.4999C5.16797 35.1594 13.8405 43.8319 24.4999 43.8319C35.1594 43.8319 43.8319 35.1594 43.8319 24.4999C43.8319 13.8405 35.1594 5.16797 24.4999 5.16797Z\" fill=\"black\"\/>\n<path d=\"M27.9048 30.8377H21.0811C20.4647 30.8377 19.5498 30.4013 19.5498 29.1992V21.2828H16.9065C15.672 21.2828 14.9312 19.7898 15.7007 18.8079L23.4334 8.93145C24.0554 8.13711 25.3015 7.96291 25.9599 8.85488L33.327 18.8445C34.0563 19.8341 33.2964 21.285 32.0944 21.285H29.4377V29.2014C29.4358 30.4015 28.5192 30.8377 27.9048 30.8377ZM22.6123 27.7752H26.3735V19.7514C26.3735 18.9054 27.0587 18.2202 27.9047 18.2202H29.0608L24.6891 12.2922C23.4411 13.8847 21.5003 16.3653 20.0494 18.2202H21.0811C21.9271 18.2202 22.6123 18.9054 22.6123 19.7514V27.7752Z\" fill=\"black\"\/>\n<path d=\"M19.8813 32.7397H29.1188V35.8022H19.8813V32.7397Z\" fill=\"black\"\/>\n<path d=\"M21.0869 37.707H27.9126V40.7695H21.0869V37.707Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Upgrade Productions",
+            "text": "<p>Each sample is already meticulously processed to meet industry standards, so you can use them instantly in your projects.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "f6f052ac-7e71-469e-9595-1c6849488f28": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"68\" height=\"68\" viewBox=\"0 0 68 68\" fill=\"none\">\n<path d=\"M39.2515 28.0127C39.2515 28.892 38.537 29.6065 37.6578 29.6065H35.5938V51.2387C35.5938 52.1179 34.8793 52.8325 34 52.8325C33.1208 52.8325 32.4062 52.1179 32.4062 51.2387V29.6065H30.3423C29.4631 29.6065 28.7485 28.892 28.7485 28.0127C28.7485 27.1335 29.4631 26.419 30.3423 26.419H32.4062V16.7609C32.4062 15.8817 33.1208 15.1671 34 15.1671C34.8793 15.1671 35.5938 15.8817 35.5938 16.7609V26.419H37.6578C38.537 26.419 39.2515 27.1335 39.2515 28.0127ZM53.8899 38.1067H51.826V16.7608C51.826 15.8815 51.1114 15.167 50.2322 15.167C49.3529 15.167 48.6384 15.8815 48.6384 16.7608V38.1067H46.5745C45.6952 38.1067 44.9807 38.8212 44.9807 39.7004C44.9807 40.5797 45.6952 41.2942 46.5745 41.2942H48.6384V51.2392C48.6384 52.1185 49.3529 52.833 50.2322 52.833C51.1114 52.833 51.826 52.1185 51.826 51.2392V41.2942H53.8899C54.7691 41.2942 55.4837 40.5797 55.4837 39.7004C55.4837 38.8212 54.7691 38.1067 53.8899 38.1067ZM21.4253 38.1067H19.3614V16.7608C19.3614 15.8815 18.6469 15.167 17.7676 15.167C16.8884 15.167 16.1738 15.8815 16.1738 16.7608V38.1067H14.1099C13.2307 38.1067 12.5161 38.8212 12.5161 39.7004C12.5161 40.5797 13.2307 41.2942 14.1099 41.2942H16.1738V51.2392C16.1738 52.1185 16.8857 52.833 17.7676 52.833C18.6469 52.833 19.3614 52.1185 19.3614 51.2392V41.2942H21.4253C22.3046 41.2942 23.0191 40.5797 23.0191 39.7004C23.0191 38.8212 22.3046 38.1067 21.4253 38.1067Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Beginners & Advanced",
+            "text": "<p>Every file and instrument is readily accessible for beginners, while also offering versatility and depth for advanced producers.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "bdb9609c-2473-4706-a271-cfed539b0604": {
+          "type": "column",
+          "repeater": "{{ product.metafields.custom.logos.value }}",
+          "settings": {
+            "image": "{{ block.repeater.img.value }}",
+            "svg": "",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "{{ block.repeater.text | metafield_tag }}",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20996911595795__529b6383-6efb-47c8-b893-efd76b0f4b12-column-1",
+        "template--20996911595795__529b6383-6efb-47c8-b893-efd76b0f4b12-column-2",
+        "template--20996911595795__529b6383-6efb-47c8-b893-efd76b0f4b12-column-3",
+        "f6f052ac-7e71-469e-9595-1c6849488f28",
+        "bdb9609c-2473-4706-a271-cfed539b0604"
+      ],
+      "settings": {
+        "title": "This is the last thing you’ll ever need to purchase to make mind blowing Hard Dance songs.",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1a997fa0-6f21-4201-ac5c-9c6998139ed4": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "WALKTHROUGH",
+        "heading_size": "h2",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/PSY-GIF_1.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=UpUN7uoIt9E",
+        "cover_image": "shopify:\/\/shop_images\/HDD_SUITE_WALKTHROUGH.00_00_46_51.Still001.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "c3ae4a44-a534-43e7-8693-84884b6514af": {
+      "type": "img-txt",
+      "settings": {
+        "img_big": "{{ product.metafields.custom.img_and_text.value.file.value }}",
+        "img_small": "{{ product.metafields.custom.img_and_text.value.small_img.value }}",
+        "layout": "text_first",
+        "title": "{{ product.metafields.custom.img_and_text.value.title.value }}",
+        "text": "{{ product.metafields.custom.img_and_text.value.text | metafield_tag }}",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "17cf1c86-a295-4a96-a077-20f18d881fa7": {
+      "type": "img-txt",
+      "settings": {
+        "img_big": "{{ product.metafields.custom.second_img_and_text.value.file.value }}",
+        "img_small": "{{ product.metafields.custom.second_img_and_text.value.small_img.value }}",
+        "layout": "image_first",
+        "title": "{{ product.metafields.custom.second_img_and_text.value.title.value }}",
+        "text": "{{ product.metafields.custom.second_img_and_text.value.text | metafield_tag }}",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "0b1dbde1-6bdd-4030-81ec-196a1cf33b8d": {
+      "type": "img-txt",
+      "settings": {
+        "img_big": "{{ product.metafields.custom.third_img_and_text_.value.file.value }}",
+        "img_small": "{{ product.metafields.custom.third_img_and_text_.value.small_img.value }}",
+        "layout": "text_first",
+        "title": "{{ product.metafields.custom.third_img_and_text_.value.title.value }}",
+        "text": "<p>{{ product.metafields.custom.third_img_and_text_.value.text | metafield_tag }}<\/p>",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "132f21ff-0936-4f3b-adb3-05572ad6a1e9": {
+      "type": "multicolumn-custom",
+      "blocks": {
+        "template--20996911595795__132f21ff-0936-4f3b-adb3-05572ad6a1e9-column-1": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"53\" height=\"53\" viewBox=\"0 0 53 53\" fill=\"none\">\n<path d=\"M13.2771 35.1476H7.9214C6.84274 35.1476 5.96289 34.2698 5.96289 33.187V19.8829C5.96289 18.8022 6.8428 17.9224 7.92347 17.9224H13.2791C14.3598 17.9224 15.2397 18.8023 15.2397 19.8829V33.187C15.2376 34.2698 14.3577 35.1476 13.2771 35.1476ZM8.61263 32.4976H12.5876V20.5726H8.61263V32.4976Z\" fill=\"black\"\/>\n<path d=\"M23.8729 43.0648C23.434 43.0648 22.9993 42.9137 22.6411 42.6239L13.0762 34.8519L14.7469 32.7961L23.1877 39.6533V13.4204L14.749 20.2775L13.0783 18.2217L22.6432 10.4519C23.2353 9.96953 24.0324 9.87432 24.7218 10.2035C25.4092 10.5285 25.8377 11.2076 25.8377 11.9715V41.103C25.8377 41.8669 25.4092 42.546 24.7197 42.873C24.4485 43.0014 24.1587 43.0656 23.873 43.0656L23.8729 43.0648Z\" fill=\"black\"\/>\n<path d=\"M29.2019 35.1419L27.7734 32.9101C29.8479 31.581 31.1377 28.9973 31.1377 26.1691C31.1377 23.5046 29.9576 20.9974 28.0592 19.6225L29.6119 17.4756C32.2267 19.3678 33.7877 22.6162 33.7877 26.1686C33.7877 29.891 32.03 33.3304 29.2019 35.1419Z\" fill=\"black\"\/>\n<path d=\"M34.5056 37.7877L33.0688 35.56C35.9652 33.6947 37.7623 30.0798 37.7623 26.1276C37.7623 22.3514 36.1578 18.927 33.4705 16.9708L35.0315 14.8301C38.3999 17.2834 40.4121 21.507 40.4121 26.1276C40.4121 30.9721 38.1496 35.4398 34.5056 37.7877Z\" fill=\"black\"\/>\n<path d=\"M40.5842 40.3549L38.9155 38.2949C41.8823 35.8955 43.7249 31.2168 43.7249 26.0885C43.7249 21.2585 42.0375 16.7139 39.3213 14.2298L41.11 12.2754C44.406 15.2877 46.3749 20.4533 46.3749 26.0883C46.3749 31.9967 44.1556 37.4627 40.5842 40.3549Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Samples",
+            "text": "<p>Over 1000+ professional quality sounds that you can use instantly to finish your music. Allow for insanely fast songwriting knowing that the quality is top tier.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20996911595795__132f21ff-0936-4f3b-adb3-05572ad6a1e9-column-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewBox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M39.1104 4.75977H16.8896C14.8399 4.75977 13.1709 6.42885 13.1709 8.4785V47.5211C13.1709 49.5709 14.84 51.2399 16.8896 51.2399H39.1104C41.1601 51.2399 42.8292 49.5708 42.8292 47.5211V8.4785C42.8292 6.42879 41.1601 4.75977 39.1104 4.75977ZM41.1492 47.5208C41.1492 48.6474 40.237 49.5595 39.1104 49.5595H16.8896C15.7631 49.5595 14.8509 48.6474 14.8509 47.5208V8.47817C14.8509 7.35161 15.7631 6.43943 16.8896 6.43943H39.1104C40.237 6.43943 41.1492 7.35161 41.1492 8.47817V47.5208Z\" fill=\"black\"\/>\n<path d=\"M19.5431 19.1798H36.4545C37.5811 19.1798 38.4976 18.2611 38.4976 17.1367V10.8698C38.4976 9.74321 37.5789 8.82666 36.4545 8.82666H19.5431C18.4166 8.82666 17.5 9.7454 17.5 10.8698V17.1367C17.5 18.2633 18.4187 19.1798 19.5431 19.1798ZM19.18 10.8694C19.18 10.6682 19.3419 10.5063 19.5431 10.5063H36.4545C36.6558 10.5063 36.8177 10.6682 36.8177 10.8694V17.1364C36.8177 17.3376 36.6558 17.4995 36.4545 17.4995H19.5431C19.3419 17.4995 19.18 17.3376 19.18 17.1364V10.8694Z\" fill=\"black\"\/>\n<path d=\"M20.6479 21.5532C18.9854 21.5532 17.6357 22.9029 17.6357 24.5654C17.6357 26.2279 18.9855 27.5776 20.6479 27.5776C22.3104 27.5776 23.6601 26.2279 23.6601 24.5654C23.6601 22.9029 22.3104 21.5532 20.6479 21.5532ZM20.6479 25.8998C19.9151 25.8998 19.3157 25.3004 19.3157 24.5676C19.3157 23.8348 19.9151 23.2354 20.6479 23.2354C21.3807 23.2354 21.9801 23.8348 21.9801 24.5676C21.9801 25.3004 21.3807 25.8998 20.6479 25.8998Z\" fill=\"black\"\/>\n<path d=\"M28.1333 21.5532C26.4707 21.5532 25.1211 22.9029 25.1211 24.5654C25.1211 26.2279 26.4708 27.5776 28.1333 27.5776C29.7957 27.5776 31.1455 26.2279 31.1455 24.5654C31.1455 22.9029 29.7957 21.5532 28.1333 21.5532ZM28.1333 25.8998C27.4005 25.8998 26.8011 25.3004 26.8011 24.5676C26.8011 23.8348 27.4005 23.2354 28.1333 23.2354C28.8661 23.2354 29.4655 23.8348 29.4655 24.5676C29.4655 25.3004 28.8661 25.8998 28.1333 25.8998Z\" fill=\"black\"\/>\n<path d=\"M35.6211 21.5532C33.9585 21.5532 32.6089 22.9029 32.6089 24.5654C32.6089 26.2279 33.9586 27.5776 35.6211 27.5776C37.2835 27.5776 38.6333 26.2279 38.6333 24.5654C38.6333 22.9029 37.2835 21.5532 35.6211 21.5532ZM35.6211 25.8998C34.8883 25.8998 34.2889 25.3004 34.2889 24.5676C34.2889 23.8348 34.8883 23.2354 35.6211 23.2354C36.3539 23.2354 36.9533 23.8348 36.9533 24.5676C36.9533 25.3004 36.3539 25.8998 35.6211 25.8998Z\" fill=\"black\"\/>\n<path d=\"M21.3522 34.0632V30.7995C21.3522 30.3357 20.9759 29.9595 20.5122 29.9595C20.0484 29.9595 19.6722 30.3357 19.6722 30.7995V34.0632C18.4231 34.4263 17.5 35.5748 17.5 36.9419C17.5 38.3091 18.4231 39.4554 19.6722 39.8207V46.3676C19.6722 46.8314 20.0484 47.2076 20.5122 47.2076C20.9759 47.2076 21.3522 46.8314 21.3522 46.3676V39.8207C22.6056 39.4576 23.5244 38.3091 23.5244 36.9419C23.5244 35.5748 22.6013 34.4285 21.3522 34.0632ZM20.5122 38.2807C19.7794 38.2807 19.18 37.6813 19.18 36.9485C19.18 36.2157 19.7794 35.6163 20.5122 35.6163C21.245 35.6163 21.8444 36.2157 21.8444 36.9485C21.8444 37.6813 21.245 38.2807 20.5122 38.2807Z\" fill=\"black\"\/>\n<path d=\"M28.84 39.401V30.8C28.84 30.3362 28.4637 29.96 28 29.96C27.5362 29.96 27.16 30.3362 27.16 30.8V39.401C25.9109 39.7641 24.9878 40.9126 24.9878 42.2797C24.9878 43.6469 25.9109 44.7932 27.16 45.1585V46.3616C27.16 46.8253 27.5362 47.2016 28 47.2016C28.4637 47.2016 28.84 46.8253 28.84 46.3616V45.1585C30.0891 44.7953 31.0122 43.6469 31.0122 42.2797C31.0122 40.9126 30.0891 39.7663 28.84 39.401ZM28 43.6185C27.2672 43.6185 26.6678 43.0191 26.6678 42.2863C26.6678 41.5535 27.2672 40.9541 28 40.9541C28.7328 40.9541 29.3322 41.5535 29.3322 42.2863C29.3322 43.0191 28.7328 43.6185 28 43.6185Z\" fill=\"black\"\/>\n<path d=\"M36.3278 35.9226V30.7995C36.3278 30.3357 35.9515 29.9595 35.4878 29.9595C35.024 29.9595 34.6478 30.3357 34.6478 30.7995V35.9226C33.3943 36.2857 32.4756 37.4341 32.4756 38.8013C32.4756 40.1685 33.3987 41.3148 34.6478 41.68V46.3679C34.6478 46.8316 35.024 47.2079 35.4878 47.2079C35.9515 47.2079 36.3278 46.8316 36.3278 46.3679V41.68C37.5769 41.3169 38.5 40.1685 38.5 38.8013C38.5 37.4341 37.5769 36.2879 36.3278 35.9226ZM35.4878 40.1335C34.755 40.1335 34.1556 39.5341 34.1556 38.8013C34.1556 38.0685 34.755 37.4691 35.4878 37.4691C36.2206 37.4691 36.82 38.0685 36.82 38.8013C36.82 39.5341 36.2206 40.1335 35.4878 40.1335Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Instrument Racks",
+            "text": "<p>Each instrument rack is an end all be all device to get professional sounds and allows you to create endless variations and combinations of samples.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20996911595795__132f21ff-0936-4f3b-adb3-05572ad6a1e9-column-3": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "{% render 'icon-volume' %}",
+            "title": "Loops & Presets",
+            "text": "<p>All presets, samples, and instruments are quality controlled and checked to ensure cohesiveness for your song writing. Presets are out of the box loud and fat. Need no additional processing unlike most companies.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "69d162d7-3f5c-4108-975c-2209258ff9e7": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"52\" height=\"52\" viewBox=\"0 0 52 52\" fill=\"none\">\n<path d=\"M44.4151 14.8648L32.9751 3.42481C32.7801 3.22981 32.5161 3.12012 32.2398 3.12012H8.31979C7.74493 3.12012 7.27979 3.58527 7.27979 4.16012V47.8401C7.27979 48.415 7.74494 48.8801 8.31979 48.8801H43.6798C44.2546 48.8801 44.7198 48.415 44.7198 47.8401V15.6001C44.7198 15.3239 44.6101 15.0598 44.4151 14.8648ZM33.2798 6.67065L41.1693 14.5601H33.2798V6.67065ZM9.35984 46.8001V5.20009H31.1998V15.6001C31.1998 16.1749 31.665 16.6401 32.2398 16.6401H42.6398V46.8001H9.35984Z\" fill=\"black\"\/>\n<path d=\"M32.3839 23.1219C32.1463 22.9248 31.8334 22.8416 31.5308 22.8964L25.8108 23.9364C25.3172 24.0258 24.9577 24.4564 24.9577 24.9602V32.547C23.8608 32.0737 22.4897 32.0879 21.2385 32.7014C19.1321 33.7353 18.153 36.0753 19.0569 37.9154C19.5099 38.8396 20.3529 39.4916 21.4254 39.7537C21.7544 39.8329 22.0916 39.8736 22.4329 39.8736C23.1357 39.8736 23.8507 39.707 24.5149 39.38C25.5041 38.8945 26.2801 38.1084 26.7026 37.1639C26.9341 36.6459 27.0438 36.1117 27.0357 35.5897L27.0377 29.9877L31.9026 29.1041C32.3962 29.0148 32.7577 28.5841 32.7577 28.0804V23.9204C32.7577 23.6116 32.6195 23.319 32.3839 23.1219ZM24.8034 36.3148C24.5799 36.8145 24.1513 37.239 23.5988 37.5112C23.0463 37.7814 22.4471 37.8606 21.9149 37.7326C21.4518 37.6209 21.1004 37.3589 20.9216 36.9993C20.5296 36.201 21.0943 35.0879 22.1526 34.5679C22.5344 34.381 22.9386 34.2916 23.3165 34.2916C23.9868 34.2916 24.5779 34.572 24.8277 35.0818C25.0085 35.4413 24.9984 35.8801 24.8034 36.3148ZM30.6778 27.2127L27.0378 27.8749V25.8294L30.6778 25.1672V27.2127Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "Templates",
+            "text": "<p>Project file templates are industry leading quality. Open these up, learn about what's going on inside or use this as a starting point to write your own tunes.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "233ed878-3a75-44c9-b2db-f6edea65c287": {
+          "type": "column",
+          "repeater": "{{ product.metafields.custom.logos_2.value }}",
+          "settings": {
+            "image": "{{ block.repeater.img.value }}",
+            "svg": "",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "<p>{{ block.repeater.text | metafield_tag }}<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20996911595795__132f21ff-0936-4f3b-adb3-05572ad6a1e9-column-1",
+        "template--20996911595795__132f21ff-0936-4f3b-adb3-05572ad6a1e9-column-2",
+        "template--20996911595795__132f21ff-0936-4f3b-adb3-05572ad6a1e9-column-3",
+        "69d162d7-3f5c-4108-975c-2209258ff9e7",
+        "233ed878-3a75-44c9-b2db-f6edea65c287"
+      ],
+      "settings": {
+        "title": "Not just samples. Also everything else you need to produce complete songs",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b5d1a58d-1f3c-4cd3-a4b2-2e4f33c301b3": {
+      "type": "shop-banner",
+      "settings": {
+        "title": "Shop this mega bundle",
+        "img": "{{ product.metafields.custom.shop_bundle_image.value }}",
+        "color_scheme": "accent-2",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1681767194250b5616": {
+      "type": "apps",
+      "blocks": {
+        "e2edda2f-dc03-4ce4-aa73-bea0153af66a": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "e2edda2f-dc03-4ce4-aa73-bea0153af66a"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".jdgm-carousel-wrapper {width: 100%; margin-top: 5rem;}",
+        ".jdgm-verified-by-judgeme {display: none;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "16817656615dc34f38": {
+      "type": "apps",
+      "blocks": {
+        "d1623231-fe9c-4901-8148-fb77ead42e2f": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "d1623231-fe9c-4901-8148-fb77ead42e2f"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2071bf88-f4e6-488c-a7ba-95644442c692",
+    "00b21ba0-4b36-4bf2-a938-ab68f2e4fb95",
+    "691ce437-e795-442c-b1a0-f42f880b6765",
+    "529b6383-6efb-47c8-b893-efd76b0f4b12",
+    "1a997fa0-6f21-4201-ac5c-9c6998139ed4",
+    "c3ae4a44-a534-43e7-8693-84884b6514af",
+    "17cf1c86-a295-4a96-a077-20f18d881fa7",
+    "0b1dbde1-6bdd-4030-81ec-196a1cf33b8d",
+    "132f21ff-0936-4f3b-adb3-05572ad6a1e9",
+    "b5d1a58d-1f3c-4cd3-a4b2-2e4f33c301b3",
+    "1681767194250b5616",
+    "related-products",
+    "16817656615dc34f38"
+  ]
+}

@@ -1,0 +1,30 @@
+.page-banner-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 575px;
+  text-align: center;
+}
+.page-banner__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-banner__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 750px) {
+  .page-banner-section {
+    min-height: 300px;
+  }
+}

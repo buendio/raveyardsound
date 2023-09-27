@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "75606e92-2221-4468-a07d-16d91b013618": {
+      "type": "page-contact",
+      "blocks": {
+        "ffb37663-958c-449a-b9b4-6331aaf65d45": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Mask_group_6.jpg",
+            "title": "general inquiries",
+            "text": "Feel free to contact us if you have any questions prior to making a purchase or require assistance with your order or licensing.",
+            "button_link": "shopify:\/\/pages\/general-inquiries",
+            "button_text": "Submit your question"
+          }
+        },
+        "ca299c44-5cf7-4c6e-ad09-1296e12723bf": {
+          "type": "block",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Mask_group_5.jpg",
+            "title": "Technical support",
+            "text": "Need help with settin up or other technical issue? For more information, please visi our FAQ page.",
+            "button_link": "shopify:\/\/pages\/technical-support",
+            "button_text": "submit request"
+          }
+        }
+      },
+      "block_order": [
+        "ffb37663-958c-449a-b9b4-6331aaf65d45",
+        "ca299c44-5cf7-4c6e-ad09-1296e12723bf"
+      ],
+      "settings": {
+        "color_scheme": "inverse"
+      }
+    }
+  },
+  "order": [
+    "75606e92-2221-4468-a07d-16d91b013618"
+  ]
+}

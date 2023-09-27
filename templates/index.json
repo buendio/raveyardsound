@@ -1,0 +1,91 @@
+{
+  "sections": {
+    "61b8e5f7-9620-49b4-9f09-c15f07cec6ea": {
+      "type": "hero-banner",
+      "settings": {
+        "img_background": "shopify:\/\/shop_images\/Mask_group_1.jpg",
+        "title": "Hard Dance Destruction Production Suite",
+        "subtitle": "",
+        "text": "Everything you need to produce mind blowing Hard Dance Music. All killer sounds. Zero fillers.",
+        "img": "shopify:\/\/shop_images\/Group_2_1_24ea8570-2e76-41d2-849a-f0e98e7bca10.png",
+        "button_link": "shopify:\/\/products\/hard-dance-destruction-production-suite",
+        "button_text": "SHOP NOW"
+      }
+    },
+    "f46a4042-f2d6-4a13-83f3-94cf630aa0c3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18667946311955__f46a4042-f2d6-4a13-83f3-94cf630aa0c3-1682622382729bba99-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hard Dance Destruction Production Suite",
+            "heading_size": "h1"
+          }
+        },
+        "template--18667946311955__f46a4042-f2d6-4a13-83f3-94cf630aa0c3-1682622382729bba99-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Limited Time Offer: Save 50% Off<\/strong><\/p><p><\/p><p>All the essential Hard Dance production resources in one place. No fillers or fluff.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18667946311955__f46a4042-f2d6-4a13-83f3-94cf630aa0c3-1682622382729bba99-0",
+        "template--18667946311955__f46a4042-f2d6-4a13-83f3-94cf630aa0c3-1682622382729bba99-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__media {border: white;}",
+        "@media (max-width: 755px) {.image-with-text__grid {display: flex; flex-direction: column-reverse; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/prodsuite_still.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2ed0beca-5ef2-46fb-b450-1b0f72e91a99": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 6,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "61b8e5f7-9620-49b4-9f09-c15f07cec6ea",
+    "f46a4042-f2d6-4a13-83f3-94cf630aa0c3",
+    "2ed0beca-5ef2-46fb-b450-1b0f72e91a99"
+  ]
+}

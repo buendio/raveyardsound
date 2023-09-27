@@ -1,0 +1,80 @@
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.img_background != blank -%}
+  {%- assign img_background = section.settings.img_background -%}
+  {{ img_background | image_url: width: img_background.width | image_tag: class: 'hero-banner__bg' }}
+{%- endif -%}
+
+<div class="hero-banner-section">
+  <div class="page-width">
+    {%- if section.settings.subtitle != blank -%}
+      <p class="hero-banner__subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h1 class="hero-banner__title">{{ section.settings.title }}</h1>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <p class="hero-banner__text">{{ section.settings.text }}</p>
+    {%- endif -%}
+    {%- if section.settings.button_text != blank -%}
+      <a href="{{ section.settings.button_link }} " class="hero-banner__link button">
+        {{ section.settings.button_text }}
+        {% render 'icon-arrow' %}
+      </a>
+    {%- endif -%}
+    {%- if section.settings.img != blank -%}
+      {%- assign img = section.settings.img -%}
+      {{ img | image_url: width: img.width | image_tag: class: 'hero-banner__img' }}
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Hero banner",
+  "class": "hero-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img_background",
+      "label": "Img Background"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "html",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Img"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero banner"
+    }
+  ]
+}  
+{% endschema %}

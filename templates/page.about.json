@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "8396b1ba-45f9-4254-bd0c-f4c92366f650": {
+      "type": "page-banner",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/IMG_9060_1.jpg",
+        "title": "We Are Raveyard.<br>The Sound of the<br>Underground."
+      }
+    },
+    "a09db7b9-036a-41cb-b37a-8a26630e71c4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21047917543699__a09db7b9-036a-41cb-b37a-8a26630e71c4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our story",
+            "heading_size": "h1"
+          }
+        },
+        "template--21047917543699__a09db7b9-036a-41cb-b37a-8a26630e71c4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>My name is Vince, and I am currently a producer\/DJ under the name Hellbound and an owner of the techno label Nullsect. I’ve been producing and DJing professionally for 8 years, and over those 8 years, I’ve learned and experienced so much. I love being able to share my experiences, my knowledge, and my sounds. The fact that I now have this platform to do this with producers all across the world is truly a dream come true. Thank you for being a part of this endless journey with me.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21047917543699__a09db7b9-036a-41cb-b37a-8a26630e71c4-heading-1",
+        "template--21047917543699__a09db7b9-036a-41cb-b37a-8a26630e71c4-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Our_Story_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
+    },
+    "f671ada4-95cf-46a6-a878-36c48773ec69": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21047917543699__f671ada4-95cf-46a6-a878-36c48773ec69-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our mission",
+            "heading_size": "h2"
+          }
+        },
+        "template--21047917543699__f671ada4-95cf-46a6-a878-36c48773ec69-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Knowledge and tools shouldn’t be gatekept. This has always been one of my core beliefs because for most of my production career, I’ve been on the wrong side of that gate. During my production journey, I never had anyone guiding me along the way, telling me what to do and what not to do. Looking back, I wish that I was able to be part of a community where I could turn to for knowledge and tools, but it just didn’t exist when I was coming up. <\/p><p><strong>That wish is what led me to start Raveyard.<\/strong><\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21047917543699__f671ada4-95cf-46a6-a878-36c48773ec69-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "explore products",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21047917543699__f671ada4-95cf-46a6-a878-36c48773ec69-heading-1",
+        "template--21047917543699__f671ada4-95cf-46a6-a878-36c48773ec69-text-1",
+        "template--21047917543699__f671ada4-95cf-46a6-a878-36c48773ec69-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6uyTw95j_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-e59b55b4-b4b9-4fab-b110-74724e51f301",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8396b1ba-45f9-4254-bd0c-f4c92366f650",
+    "a09db7b9-036a-41cb-b37a-8a26630e71c4",
+    "f671ada4-95cf-46a6-a878-36c48773ec69"
+  ]
+}

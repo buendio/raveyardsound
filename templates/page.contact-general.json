@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page-custom",
+      "settings": {
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "ba1271c4-4d32-4ffd-9526-14f2ba20c5b8": {
+      "type": "general-form",
+      "blocks": {
+        "f26c72b7-ff2b-4bef-a777-11e91879810f": {
+          "type": "email",
+          "settings": {
+            "title": "Email*",
+            "placeholder": "Enter your email address"
+          }
+        },
+        "057021e0-50cc-481a-93cb-bf773a07595f": {
+          "type": "text",
+          "settings": {
+            "title": "Subject",
+            "placeholder": "Write a topic of your request"
+          }
+        },
+        "e333049f-275e-4ccf-9552-04f2fb426c4a": {
+          "type": "textarea",
+          "settings": {
+            "title": "Please enter details …",
+            "placeholder": "Please share your message with more details"
+          }
+        }
+      },
+      "block_order": [
+        "f26c72b7-ff2b-4bef-a777-11e91879810f",
+        "057021e0-50cc-481a-93cb-bf773a07595f",
+        "e333049f-275e-4ccf-9552-04f2fb426c4a"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 80,
+        "color_scheme": "background-1"
+      }
+    },
+    "b7e3273f-4a99-47c2-834f-ae60306629a4": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ba1271c4-4d32-4ffd-9526-14f2ba20c5b8",
+    "b7e3273f-4a99-47c2-834f-ae60306629a4"
+  ]
+}

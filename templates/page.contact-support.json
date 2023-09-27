@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page-custom",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "15e7b715-3640-454e-8878-64baf4cd56e3": {
+      "type": "support-form",
+      "blocks": {
+        "96dd4ed9-40ed-4eda-9235-4fd8b3a9829e": {
+          "type": "select",
+          "settings": {
+            "title": "Language",
+            "level": "",
+            "label-dis": "",
+            "label-one": "English",
+            "label-two": "Spanish",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": ""
+          }
+        },
+        "178a23f2-7d4e-42a4-a263-4f50dbe1c551": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "Your Email"
+          }
+        },
+        "2b73d925-18ef-4be2-9d0f-4437fcfe02ca": {
+          "type": "text",
+          "settings": {
+            "title": "Order Number",
+            "placeholder": "Order Number",
+            "class": ""
+          }
+        },
+        "d3b282c9-a51e-443f-9598-f3179afe0728": {
+          "type": "select",
+          "settings": {
+            "title": "product type",
+            "level": "level",
+            "label-dis": "Choose your product",
+            "label-one": "Sample Packs",
+            "label-two": "Serum Presets",
+            "label-three": "Ableton Instruments",
+            "label-four": "Ableton Processing",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": ""
+          }
+        },
+        "d4adbe3f-5453-4029-acb7-ccd0999a351e": {
+          "type": "select",
+          "settings": {
+            "title": "Sample Packs",
+            "level": "level1",
+            "label-dis": "Choose your sample packs",
+            "label-one": "Hard Dance Destruction Vol. 1",
+            "label-two": "Hard Dance Destruction Vol. 2",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": ""
+          }
+        },
+        "01040e25-7ef5-4e5c-a1e0-259fe25438ad": {
+          "type": "select",
+          "settings": {
+            "title": "Ableton Instruments",
+            "level": "level1",
+            "label-dis": "Please Select",
+            "label-one": "Raveyard Kick Generator 1.0",
+            "label-two": "HDD Psy Bass Generator",
+            "label-three": "HDD Donk Bass Generator",
+            "label-four": "HDD Clap Generator",
+            "label-five": "HDD Open Hat Generator",
+            "label-six": "HDD Closed Hat Generator",
+            "label-seven": "HDD Ride Cymbal Generator",
+            "label-eight": "HDD Tom Generator",
+            "label-nine": "HDD Snare Generator",
+            "label-ten": ""
+          }
+        },
+        "aa4d2997-3716-4ea1-8763-aa3c080a78fa": {
+          "type": "select",
+          "settings": {
+            "title": "Ableton Processing",
+            "level": "level1",
+            "label-dis": "Choose Processing",
+            "label-one": "Hard Dance Destruction Processing Racks",
+            "label-two": "Dynamic Spectral EQ 1.0",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": ""
+          }
+        },
+        "5553026d-c7d0-46fb-8f36-7c51ac1eb483": {
+          "type": "select",
+          "settings": {
+            "title": "Hard Dance Destruction Vol. 2",
+            "level": "level2",
+            "label-dis": "Choose your hard dance",
+            "label-one": "Files are corrupt",
+            "label-two": "Samples are not loading",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": ""
+          }
+        },
+        "73ed027b-a505-4074-a950-238c2978ba3b": {
+          "type": "select",
+          "settings": {
+            "title": "Ableton Version",
+            "level": "level",
+            "label-dis": "choose",
+            "label-one": "Ableton Version",
+            "label-two": "",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": ""
+          }
+        },
+        "f3211520-e42b-4ded-82a5-60747d346f57": {
+          "type": "text",
+          "settings": {
+            "title": "Ableton Version",
+            "placeholder": "Ableton Version",
+            "class": "form-field--vis"
+          }
+        },
+        "e53487d5-6508-4d58-8250-c7f81d6569a8": {
+          "type": "text",
+          "settings": {
+            "title": "Operating System",
+            "placeholder": "Operating System",
+            "class": "form-field--vis"
+          }
+        },
+        "04016a4c-de1c-4afb-ac47-37f08848d18d": {
+          "type": "textarea",
+          "settings": {
+            "title": "Please enter details of your request:",
+            "placeholder": "Describe your problem with more details"
+          }
+        }
+      },
+      "block_order": [
+        "96dd4ed9-40ed-4eda-9235-4fd8b3a9829e",
+        "178a23f2-7d4e-42a4-a263-4f50dbe1c551",
+        "2b73d925-18ef-4be2-9d0f-4437fcfe02ca",
+        "d3b282c9-a51e-443f-9598-f3179afe0728",
+        "d4adbe3f-5453-4029-acb7-ccd0999a351e",
+        "01040e25-7ef5-4e5c-a1e0-259fe25438ad",
+        "aa4d2997-3716-4ea1-8763-aa3c080a78fa",
+        "5553026d-c7d0-46fb-8f36-7c51ac1eb483",
+        "73ed027b-a505-4074-a950-238c2978ba3b",
+        "f3211520-e42b-4ded-82a5-60747d346f57",
+        "e53487d5-6508-4d58-8250-c7f81d6569a8",
+        "04016a4c-de1c-4afb-ac47-37f08848d18d"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "color_scheme": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "15e7b715-3640-454e-8878-64baf4cd56e3"
+  ]
+}

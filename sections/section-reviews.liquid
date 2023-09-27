@@ -1,0 +1,151 @@
+<!-- Swiper Slider css -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"/>
+<!-- Swiper Slider install -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+{{ 'section-reviews.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <h2 class="section-reviews__title">{{ section.settings.title }}</h2>  
+    {%- endif -%}
+    <div class="section-reviews__wrap">
+      <div class="section-reviews__slider" style="overflow:hidden;">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.text != blank -%}    
+              <div class="swiper-slide">
+                <div class="block-review">
+                  <div class="block-review__text">
+                    {% render 'icon-quote' %}
+                    {{ block.settings.text }}
+                  </div>
+                  {%- if block.settings.img != blank -%}
+                    {%- assign img = block.settings.img -%}
+                    {{ img | image_url: width: img.width | image_tag: class: 'block-review__img', loading: 'lazy' }}
+                  {%- endif -%}
+                  {%- if block.settings.name != blank -%}
+                    <p class="block-review__name">{{ block.settings.name }}</p>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="slider-navigation-{{ section.id }} reviews-slider-nav">
+        <div class="{{ section.id }}-prev swiper-button-prev slider-nav-prev">{% render 'slidearrow-left' %}</div>
+        <div class="{{ section.id }}-next swiper-button-next slider-nav-next">{% render 'slidearrow-right' %}</div>
+        <div class="{{ section.id }}-pagination slider-pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => { 
+    const sliderReviews = new Swiper('.section-reviews__slider', {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 0,
+      speed: 1000,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.{{ section.id }}-next',
+        prevEl: '.{{ section.id }}-prev',
+      },
+      pagination: {
+        el: '.{{ section.id }}-pagination',
+        clickable: true,
+      }
+    })
+  })
+</script>
+
+{% schema %}
+  {
+  "name": "Section Reviews",
+  "class": "section-reviews",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+    
+  ],
+  "blocks": [
+    {
+      "name": "Review",
+      "type": "review",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Img"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Reviews"
+    }
+  ]
+}  
+{% endschema %}

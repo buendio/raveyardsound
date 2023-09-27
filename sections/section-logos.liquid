@@ -1,0 +1,95 @@
+{{ 'section-logos.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="page-width section-{{ section.id }}-padding">
+  <div class="section-logos-wrap">
+    {%- for block in section.blocks -%}
+      <div class="logo-item">
+        {% if block.settings.svg != blank %}
+          {{ block.settings.svg }}
+        {% elsif block.settings.img != blank %}
+          {%- assign img = block.settings.img -%}
+          {{ img | image_url: width: img.width | image_tag: class: 'logo-item__img', loading: 'lazy' }}
+        {%- endif -%}
+        {% if block.settings.text != blank %}
+           <p class="logo-item__text">{{ block.settings.text }}</p>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+  "name": "Section Logos",
+  "class": "section section-logos",
+  "tag": "section",
+  "settings": [
+     {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "block",
+      "type": "block",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "svg",
+          "label": "Svg",
+          "info": "Svg Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Img",
+          "info": "Image"
+        },
+        {
+          "type": "html",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Logos"
+    }
+  ]
+}  
+{% endschema %}

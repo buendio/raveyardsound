@@ -1,0 +1,98 @@
+.section-reviews {
+  text-align: center;
+}
+.section-reviews__title {
+  max-width: 551px;
+  margin: 0 auto 50px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.section-reviews__wrap {
+  position: relative;
+}
+.section-reviews__slider {
+  max-width: 946px;
+  margin: 0 auto;
+  background: #fff;
+}
+.block-review {
+  padding: 45px 85px 35px;
+}
+.block-review__text {
+  margin-bottom: 40px;
+}
+.block-review__text p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: normal;
+  font-style: normal;
+  font-weight: 500;
+}
+.block-review__img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+}
+.block-review__name {
+  margin: 0 auto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+.section-reviews__wrap .swiper-button-next,
+.section-reviews__wrap .swiper-button-prev {
+  width: 58px;
+  height: 58px;
+  background: #fff;
+  transition: all 300ms;
+  z-index: 11;
+}
+.section-reviews__wrap .swiper-button-next:hover,
+.section-reviews__wrap .swiper-button-prev:hover {
+  background: #1af198;
+}
+.section-reviews__wrap .swiper-button-next:after,
+.section-reviews__wrap .swiper-button-prev:after {
+  display: none;
+}
+.section-reviews__wrap .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -50px;
+}
+.section-reviews__wrap .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+}
+.section-reviews__wrap .swiper-pagination-bullet-active {
+  background: #000;
+}
+@media screen and (max-width: 940px) {
+  .section-reviews__wrap .swiper-button-next {
+    right: 0px;
+    left: auto;
+    top: auto;
+    bottom: -65px;
+  }
+  .section-reviews__wrap .swiper-button-prev {
+    right: auto;
+    left: 0;
+    top: auto;
+    bottom: -65px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .block-review {
+    padding: 40px 25px 30px;
+  }
+  .section-reviews__title {
+    font-size: 22px;
+    margin: 0 auto 30px;
+  }
+  .block-review__text p {
+    font-size: 24px;
+  }
+}

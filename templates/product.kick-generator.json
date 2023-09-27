@@ -1,0 +1,346 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.genre.value }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judgeme_preview_badge_product_page_3a03e245": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "a89ee6ad-035d-48d4-b0d7-fd913da45a1a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.custom_hammer.value }}",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "a7858573-896c-487e-83f8-69bead2d3877": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ableton 11.3.10+ Compatible",
+            "icon": "lightning_bolt",
+            "content": "",
+            "page": ""
+          }
+        },
+        "cc179cb6-8d5a-4105-94ea-3943fbe3d216": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "3 Day Money-Back Guarantee",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "212293d5-0736-4ed6-a946-1b305cbb7094": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Instant Download & Access Anytime",
+            "icon": "box",
+            "content": "",
+            "page": ""
+          }
+        },
+        "ff4acb62-d475-4dcf-a9ab-211e5743d498": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "100% Royalty Free",
+            "icon": "price_tag",
+            "content": "",
+            "page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judgeme_preview_badge_product_page_3a03e245",
+        "price",
+        "a89ee6ad-035d-48d4-b0d7-fd913da45a1a",
+        "a7858573-896c-487e-83f8-69bead2d3877",
+        "cc179cb6-8d5a-4105-94ea-3943fbe3d216",
+        "212293d5-0736-4ed6-a946-1b305cbb7094",
+        "ff4acb62-d475-4dcf-a9ab-211e5743d498",
+        "buy_buttons",
+        "description"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 80,
+        "padding_bottom": 100
+      }
+    },
+    "143c0b21-9685-4863-a1c3-56216db90b52": {
+      "type": "product-widget",
+      "blocks": {
+        "cf82c113-5124-4119-b51f-36f3a411dd68": {
+          "type": "title",
+          "settings": {
+            "title": "{{ product.metafields.custom.widget.value.title.value }}"
+          }
+        },
+        "3128f104-1b38-4712-81a4-4c00bd1228e8": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.widget.value.sub_title.value }}"
+          }
+        },
+        "828b450e-8978-4df3-a0b4-5a0ac75ad9b9": {
+          "type": "title",
+          "settings": {
+            "title": "{{ product.metafields.custom.widget.value.title_2.value }}"
+          }
+        },
+        "c0b26696-d927-4205-b64e-1adc4f6ff92b": {
+          "type": "custom_code",
+          "settings": {
+            "code": "{{ product.metafields.custom.widget.value.custom_code.value }}"
+          }
+        },
+        "2d9460a8-ebc9-4287-b58b-f89ac337b4c1": {
+          "type": "video",
+          "settings": {
+            "video_url": "{{ product.metafields.custom.widget.value.video_link.value }}",
+            "cover_image": "{{ product.metafields.custom.widget.value.poster_img.value }}",
+            "enable_video_looping": false
+          }
+        }
+      },
+      "block_order": [
+        "cf82c113-5124-4119-b51f-36f3a411dd68",
+        "3128f104-1b38-4712-81a4-4c00bd1228e8",
+        "828b450e-8978-4df3-a0b4-5a0ac75ad9b9",
+        "c0b26696-d927-4205-b64e-1adc4f6ff92b",
+        "2d9460a8-ebc9-4287-b58b-f89ac337b4c1"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Mask_group_1.jpg"
+      }
+    },
+    "1408421a-a80e-4173-8b6d-a655e6d0e3ba": {
+      "type": "img-txt",
+      "settings": {
+        "img_big": "shopify:\/\/shop_images\/Screenshot_2023-09-26_at_11.31.20_AM.png",
+        "img_small": "{{ product.metafields.custom.img_and_text.value.small_img.value }}",
+        "layout": "text_first",
+        "title": "{{ product.metafields.custom.img_and_text.value.title.value }}",
+        "text": "<p>{{ product.metafields.custom.img_and_text.value.text | metafield_tag }}<\/p>",
+        "color_scheme": "",
+        "padding_top": 68,
+        "padding_bottom": 48
+      }
+    },
+    "316d3a4e-438d-42dc-91ca-2ea5a5ea84c4": {
+      "type": "img-txt",
+      "settings": {
+        "img_big": "{{ product.metafields.custom.second_img_and_text.value.file.value }}",
+        "img_small": "{{ product.metafields.custom.second_img_and_text.value.small_img.value }}",
+        "layout": "image_first",
+        "title": "{{ product.metafields.custom.second_img_and_text.value.title.value }}",
+        "text": "{{ product.metafields.custom.second_img_and_text.value.text | metafield_tag }}",
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 68
+      }
+    },
+    "a298bd58-16bd-4c3e-b418-7c513cfb172a": {
+      "type": "img-txt",
+      "settings": {
+        "img_big": "{{ product.metafields.custom.third_img_and_text_.value.file.value }}",
+        "img_small": "{{ product.metafields.custom.third_img_and_text_.value.small_img.value }}",
+        "layout": "text_first",
+        "title": "{{ product.metafields.custom.third_img_and_text_.value.title.value }}",
+        "text": "{{ product.metafields.custom.third_img_and_text_.value.text | metafield_tag }}",
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 68
+      }
+    },
+    "9135ae3c-3b89-41bf-af7c-26e3455a259c": {
+      "type": "section-reviews",
+      "blocks": {
+        "68d25778-b3fd-4d83-b64e-16f77a7a7ae8": {
+          "type": "review",
+          "settings": {
+            "text": "<p>I can't express how much these serum presets have accelerated my workflow. They're a fantastic starting point for my songs.<\/p>",
+            "img": "shopify:\/\/shop_images\/Ellipse_15.png",
+            "name": "Jon"
+          }
+        },
+        "d0b13826-1749-4a44-948d-a7a27ba8d285": {
+          "type": "review",
+          "settings": {
+            "text": "<p>I can't express how much these serum presets have accelerated my workflow. They're a fantastic starting point for my songs. I can't express how much these serum presets have accelerated my workflow.<\/p>",
+            "img": "shopify:\/\/shop_images\/ee7f08f3a4e46267bb01c3bd25388b67.png",
+            "name": "Lara"
+          }
+        }
+      },
+      "block_order": [
+        "68d25778-b3fd-4d83-b64e-16f77a7a7ae8",
+        "d0b13826-1749-4a44-948d-a7a27ba8d285"
+      ],
+      "settings": {
+        "title": "trusted by industry professionals",
+        "color_scheme": "accent-2",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "30782636-6e91-4cbf-aefb-260cf88172b4": {
+      "type": "multicolumn-custom",
+      "blocks": {
+        "template--20996911694099__30782636-6e91-4cbf-aefb-260cf88172b4-column-1": {
+          "type": "column",
+          "repeater": "{{ product.metafields.custom.logos.value }}",
+          "settings": {
+            "image": "{{ block.repeater.img.value }}",
+            "svg": "",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "{{ block.repeater.text | metafield_tag }}",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20996911694099__30782636-6e91-4cbf-aefb-260cf88172b4-column-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"53\" height=\"53\" viewBox=\"0 0 53 53\" fill=\"none\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M21.5314 49.6875H31.4689C32.384 49.6875 33.1252 48.9463 33.1252 48.0312C33.1252 47.1161 32.384 46.375 31.4689 46.375H21.5314C20.6163 46.375 19.8752 47.1161 19.8752 48.0312C19.8752 48.9463 20.6163 49.6875 21.5314 49.6875ZM18.2189 35.9965V38.0937C18.2189 39.4125 18.7427 40.6754 19.6744 41.607C20.606 42.5387 21.8689 43.0625 23.1877 43.0625H29.8127C31.1315 43.0625 32.3944 42.5387 33.326 41.607C34.2576 40.6754 34.7814 39.4125 34.7814 38.0937V35.9965C40.2055 33.0504 43.8911 27.3034 43.8911 20.7034C43.8911 11.1056 36.0985 3.31299 26.5007 3.31299C16.9029 3.31299 9.11035 11.1056 9.11035 20.7034C9.11035 27.3034 12.7955 33.0508 18.22 35.9965H18.2189ZM21.5314 34.9758C21.5314 34.332 21.1588 33.7481 20.5749 33.4749C15.7615 31.2348 12.422 26.3548 12.422 20.7029C12.422 12.9331 18.73 6.62506 26.4998 6.62506C34.2696 6.62506 40.5777 12.9331 40.5777 20.7029C40.5777 26.3548 37.2382 31.2346 32.4247 33.4749C31.8408 33.7481 31.4682 34.332 31.4682 34.9758V38.0937C31.4682 38.5326 31.2943 38.955 30.9837 39.2655C30.6732 39.576 30.2509 39.7499 29.812 39.7499H23.187C22.7481 39.7499 22.3257 39.576 22.0152 39.2655C21.7046 38.9549 21.5307 38.5326 21.5307 38.0937L21.5314 34.9758ZM19.8752 19.8751C19.8752 16.2189 22.844 13.2501 26.5002 13.2501C27.4153 13.2501 28.1564 12.5089 28.1564 11.5938C28.1564 10.6787 27.4153 9.93757 26.5002 9.93757C21.0157 9.93757 16.5627 14.3908 16.5627 19.8751C16.5627 20.7902 17.3038 21.5313 18.2189 21.5313C19.134 21.5313 19.8752 20.7902 19.8752 19.8751Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "",
+            "text": "<p>Say goodbye to writer's block. This production suite is designed to obliterate any unproductivity and fuel your creativity.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20996911694099__30782636-6e91-4cbf-aefb-260cf88172b4-column-3": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"49\" height=\"49\" viewBox=\"0 0 49 49\" fill=\"none\">\n<path d=\"M24.4999 46.8944C12.294 46.8944 2.10547 36.7058 2.10547 24.4999C2.10547 12.294 12.294 2.10547 24.4999 2.10547C36.7058 2.10547 46.8944 12.294 46.8944 24.4999C46.8944 36.7058 36.7058 46.8944 24.4999 46.8944ZM24.4999 5.16797C13.8405 5.16797 5.16797 13.8405 5.16797 24.4999C5.16797 35.1594 13.8405 43.8319 24.4999 43.8319C35.1594 43.8319 43.8319 35.1594 43.8319 24.4999C43.8319 13.8405 35.1594 5.16797 24.4999 5.16797Z\" fill=\"black\"\/>\n<path d=\"M27.9048 30.8377H21.0811C20.4647 30.8377 19.5498 30.4013 19.5498 29.1992V21.2828H16.9065C15.672 21.2828 14.9312 19.7898 15.7007 18.8079L23.4334 8.93145C24.0554 8.13711 25.3015 7.96291 25.9599 8.85488L33.327 18.8445C34.0563 19.8341 33.2964 21.285 32.0944 21.285H29.4377V29.2014C29.4358 30.4015 28.5192 30.8377 27.9048 30.8377ZM22.6123 27.7752H26.3735V19.7514C26.3735 18.9054 27.0587 18.2202 27.9047 18.2202H29.0608L24.6891 12.2922C23.4411 13.8847 21.5003 16.3653 20.0494 18.2202H21.0811C21.9271 18.2202 22.6123 18.9054 22.6123 19.7514V27.7752Z\" fill=\"black\"\/>\n<path d=\"M19.8813 32.7397H29.1188V35.8022H19.8813V32.7397Z\" fill=\"black\"\/>\n<path d=\"M21.0869 37.707H27.9126V40.7695H21.0869V37.707Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "63091117-1573-477c-99d8-fa24ef38a39a": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"68\" height=\"68\" viewBox=\"0 0 68 68\" fill=\"none\">\n  <path d=\"M39.2515 28.0127C39.2515 28.892 38.537 29.6065 37.6578 29.6065H35.5938V51.2387C35.5938 52.1179 34.8793 52.8325 34 52.8325C33.1208 52.8325 32.4062 52.1179 32.4062 51.2387V29.6065H30.3423C29.4631 29.6065 28.7485 28.892 28.7485 28.0127C28.7485 27.1335 29.4631 26.419 30.3423 26.419H32.4062V16.7609C32.4062 15.8817 33.1208 15.1671 34 15.1671C34.8793 15.1671 35.5938 15.8817 35.5938 16.7609V26.419H37.6578C38.537 26.419 39.2515 27.1335 39.2515 28.0127ZM53.8899 38.1067H51.826V16.7608C51.826 15.8815 51.1114 15.167 50.2322 15.167C49.3529 15.167 48.6384 15.8815 48.6384 16.7608V38.1067H46.5745C45.6952 38.1067 44.9807 38.8212 44.9807 39.7004C44.9807 40.5797 45.6952 41.2942 46.5745 41.2942H48.6384V51.2392C48.6384 52.1185 49.3529 52.833 50.2322 52.833C51.1114 52.833 51.826 52.1185 51.826 51.2392V41.2942H53.8899C54.7691 41.2942 55.4837 40.5797 55.4837 39.7004C55.4837 38.8212 54.7691 38.1067 53.8899 38.1067ZM21.4253 38.1067H19.3614V16.7608C19.3614 15.8815 18.6469 15.167 17.7676 15.167C16.8884 15.167 16.1738 15.8815 16.1738 16.7608V38.1067H14.1099C13.2307 38.1067 12.5161 38.8212 12.5161 39.7004C12.5161 40.5797 13.2307 41.2942 14.1099 41.2942H16.1738V51.2392C16.1738 52.1185 16.8857 52.833 17.7676 52.833C18.6469 52.833 19.3614 52.1185 19.3614 51.2392V41.2942H21.4253C22.3046 41.2942 23.0191 40.5797 23.0191 39.7004C23.0191 38.8212 22.3046 38.1067 21.4253 38.1067Z\" fill=\"black\"\/>\n<\/svg>",
+            "title": "",
+            "text": "<p>Every file and instrument is readily accessible for beginners, while also offering versatility and depth for advanced producers.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20996911694099__30782636-6e91-4cbf-aefb-260cf88172b4-column-1",
+        "template--20996911694099__30782636-6e91-4cbf-aefb-260cf88172b4-column-2",
+        "template--20996911694099__30782636-6e91-4cbf-aefb-260cf88172b4-column-3",
+        "63091117-1573-477c-99d8-fa24ef38a39a"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "16817656615dc34f38": {
+      "type": "apps",
+      "blocks": {
+        "d1623231-fe9c-4901-8148-fb77ead42e2f": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "d1623231-fe9c-4901-8148-fb77ead42e2f"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "143c0b21-9685-4863-a1c3-56216db90b52",
+    "1408421a-a80e-4173-8b6d-a655e6d0e3ba",
+    "316d3a4e-438d-42dc-91ca-2ea5a5ea84c4",
+    "a298bd58-16bd-4c3e-b418-7c513cfb172a",
+    "9135ae3c-3b89-41bf-af7c-26e3455a259c",
+    "30782636-6e91-4cbf-aefb-260cf88172b4",
+    "16817656615dc34f38",
+    "related-products"
+  ]
+}

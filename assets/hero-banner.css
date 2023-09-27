@@ -1,0 +1,69 @@
+.hero-banner {
+  position: relative;
+
+  text-align: center;
+}
+.hero-banner__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-banner-section {
+}
+.hero-banner .page-width {
+  min-height: calc(100vh - 130px);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-banner__subtitle {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 12px;
+  font-family: "Lexend Peta", sans-serif;
+  color: #03da81;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.hero-banner__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.hero-banner__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  position: relative;
+  color: #fff;
+}
+.hero-banner__link {
+  position: relative;
+}
+.hero-banner__img {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 500px) {
+  .hero-banner .page-width {
+    min-height: 550px;
+  }
+  .hero-banner__img {
+    max-width: calc(100% + 30px);
+  }
+}
+@media screen and (max-width: 370px) {
+  .hero-banner__subtitle {
+    max-width: 200px;
+  }
+}

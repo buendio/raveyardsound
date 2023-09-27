@@ -1,0 +1,36 @@
+{{ 'page-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="section-{{ section.id }} page-banner-section">
+  {%- if section.settings.img != blank -%}
+    {%- assign img = section.settings.img -%}
+    {{ img | image_url: width: img.width | image_tag: class: 'page-banner__img', loading: 'lazy' }}
+  {%- endif -%}
+  {%- if section.settings.title != blank -%}
+    <h1 class="page-banner__title">{{ section.settings.title }}</h1>
+  {%- endif -%}
+</div>
+
+{% schema %}
+  {
+  "name": "Page Banner",
+  "class": "page-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Img"
+    },
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Banner"
+    }
+  ]
+}  
+{% endschema %}

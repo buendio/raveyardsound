@@ -1,0 +1,281 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+{{ 'product-widget.css' | asset_url | stylesheet_tag }}
+
+  {%- if product.metafields.custom.widget == blank  -%}
+    <style>
+      .product-widget {
+        display: none !important;
+      }
+    </style>
+  {%- endif -%}
+  
+
+
+{%- if section.settings.img != blank -%}
+  <img class="product-widget__bg" src="{{ section.settings.img | img_url: 'master' }}" alt="">
+{%- endif -%}
+
+<div class="page-width">
+  
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+  
+      {%- when 'title' -%}
+        {%- if block.settings.title != blank -%}  
+        <h2 class="product-widget__title">{{ block.settings.title }}</h2>          
+        {%- endif -%} 
+      {%- when 'text' -%}
+        {%- if block.settings.text != blank -%}    
+          <p class="product-widget__text">{{ block.settings.text }}</p>            
+        {%- endif -%} 
+      {%- when 'image' -%}
+        {%- if block.settings.img != blank -%}
+          {%- assign img = block.settings.img -%}
+          {{ img | image_url: width: img.width | image_tag: class: 'product-widget__img', loading: 'lazy' }}
+        {%- endif -%}  
+      {%- when 'button' -%}
+        {%- assign product_form_id = 'product-form-' | append: section.id -%}
+        {%- assign widget_class = 'widget-form' -%}
+        {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, widget_class: widget_class -%}
+      {%- when 'custom_code' -%}
+        {%- ########################################################################## 
+        # Label: Code
+        # Returns: a string or an empty object(if nothing has been entered)
+        # Filters: https://shopify.dev/api/liquid/objects#string 
+        ########################################################################## -%}
+        {{ block.settings.code }} 
+  
+      {%- when 'video' -%}
+        {%- if block.settings.video_url != blank -%}
+           
+        {% assign video_id = block.settings.video_url | split: "v=" | last | split: "&" | first %}
+        {%- liquid
+          
+ 
+          assign video_alt = block.settings.video.alt | default: block.settings.description
+          assign poster = block.settings.video.preview_image | default: block.settings.cover_image
+          assign poster2 = block.settings.video.preview_image | img_url: master
+        
+          if block.settings.video != null
+            assign ratio_diff = block.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+            if ratio_diff < 0.01 and ratio_diff > 0
+              assign fix_ratio = true
+            endif
+          endif
+        -%}
+        <noscript>
+          <div
+            class="video-section__media"
+            {% if poster != null %}
+              style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+            {% endif %}
+          >
+            {%- if block.settings.video == null and block.settings.video_url != null -%}
+              <a
+                href="{{ block.settings.video_url }}"
+                class="video-section__poster media media--transparent{% if poster == null %} video-section__placeholder{% endif %}"
+              >
+                {%- if poster != null -%}
+                  {{
+                    poster
+                    | image_url: width: 3840
+                    | image_tag:
+                      loading: 'lazy',
+                      sizes: sizes,
+                      widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                      alt: alt
+                  }}
+                {%- else -%}
+                  {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                {%- endif -%}
+              </a>
+            {%- else -%}
+              {{
+                block.settings.video
+                | video_tag: image_size: '1100x', loop: block.settings.enable_video_looping, controls: true, muted: false
+              }}
+            {%- endif -%}
+          </div>
+        </noscript>
+        <deferred-media
+          class="video-section__media deferred-media no-js-hidden gradient global-media-settings {% if fix_ratio %} media-fit-cover{% endif %}"
+          data-media-id="{{ video_id }}"
+          {% if poster != null %}
+            style=""
+          {% endif %}
+        >
+          <button
+            id="Deferred-Poster-Modal-{{ video_id }}"
+            class="video-section__poster media deferred-media__poster media--landscape"
+            type="button"
+            aria-label="{{ alt }}"
+          >
+            {%- if poster != null -%}
+              {{
+                poster
+                | image_url: width: 3840
+                | image_tag: loading: 'lazy', sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+              }}
+            {%- else -%}
+              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+            {%- endif -%}
+            <span class="deferred-media__poster-button motion-reduce">
+              {%- render 'icon-play2' -%}
+            </span>
+          </button>
+          <template>
+            {%- if block.settings.video == null and block.settings.video_url != null -%}
+              {%- liquid
+                assign loop = ''
+                if block.settings.enable_video_looping
+                  assign loop = '&loop=1&playlist=' | append: video_id
+                endif
+              -%}
+              {%- if block.settings.video_url != blank -%}
+                <iframe
+                  src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                  class="js-youtube"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen"
+                ></iframe>
+              
+              {%- endif -%}
+            {%- else -%}
+              {{
+                block.settings.video
+                | video_tag:
+                  image_size: '1100x',
+                  autoplay: true,
+                  loop: block.settings.enable_video_looping,
+                  controls: true,
+                  muted: false,
+                  poster:  poster
+              }}
+            {%- endif -%}
+          </template>
+        </deferred-media>
+      {%- endif -%}
+      
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+
+
+{% schema %}
+  {
+  "name": "Product Widget",
+  "class": "product-widget",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Img",
+      "info": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Title",
+      "type": "title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Img"
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "type": "button",
+      "settings": [
+        {
+          "type": "url",
+          "id": "button_text",
+          "label": "Button Text"
+        }
+      ]
+    },
+    {
+      "name": "Custom Code",
+      "type": "custom_code",
+      "settings": [
+        {
+          "type": "text",
+          "id": "code",
+          "label": "Code"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "type": "video",
+      "settings": [
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__1.content"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "t:sections.video.settings.video.label"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__2.content"
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.video.settings.paragraph.content"
+        },
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.video.settings.cover_image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Widget"
+    }
+  ]
+}  
+{% endschema %}

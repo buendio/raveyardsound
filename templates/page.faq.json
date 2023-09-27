@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page-custom",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 28
+      }
+    },
+    "76b1eb28-1061-476d-802b-0c7d8a550d97": {
+      "type": "section-faq",
+      "blocks": {
+        "55b1506b-c626-44b3-a691-899b603df0da": {
+          "type": "faq",
+          "settings": {
+            "title": "How to Install\/Use Ableton Racks",
+            "text": "<p>Whether you've purchased a bundle, or individual ableton instruments, the process is the same. After you've made your purchase, download the .ZIP file to somewhere you'll remember. (I recommend making a folder in your designated Samples Folder where all your racks can be.) <\/p><p><\/p><p>After downloading, unzip the file. You will see an ableton folder with the title of the rack. Inside that folder, you will see your rack. You can either drag this straight into Ableton <strong>OR<\/strong> <strong>you can add the folder you created earlier to the sidebar of Ableton for quick access. <\/strong>This way you will won't have to jump through a million hoops to load your racks everytime. <\/p><p>Continue to download new racks to that same folder and pretty soon you'll have an arsenal of incredible Ableton Racks at your fingertips.<\/p><p><\/p><p>**IF THE RACK IS NOT LOADING PROPERLY IT IS MOST LIKELY BECAUSE YOU ARE NOT USING THE CORRECT VERSION OF ABLETON. CHECK THE PRODUCT PAGE FOR COMPATIBILITY INFORMATION**<\/p>"
+          }
+        },
+        "0dee5658-8a7a-4199-8f48-9b240ddecdf4": {
+          "type": "faq",
+          "settings": {
+            "title": "Help! I Can't Drag My Ableton Rack Into Ableton???",
+            "text": "<p>If you are trying to drag your Ableton Rack into Ableton and you are getting an error message, <strong>you most likely are not using a compatible version of Ableton.<\/strong> Be sure to check the product page to ensure compatibility.<\/p><p><strong>All of our products are made using the latest version of Ableton Live Suite at that time.    <\/strong><\/p><p>Also be aware that there are certain restrictions when using Ableton Live <strong>Intro and Standard <\/strong>versions. The intro and standard versions do not include some of the stock audio effects that are used in the rack. <\/p>"
+          }
+        },
+        "2f328c1c-e089-48fa-9201-4f844826466b": {
+          "type": "faq",
+          "settings": {
+            "title": "How to Install Serum Presets",
+            "text": "<p>After you've made your purchase, download the .ZIP file containing the presets. Depending on which product you purchased, there may be a sample pack included with the serum presets. You can drag that sample pack to your samples folder (or wherever you'd like) because this has nothing to do with the Serum Presets.<\/p><p><\/p><p>Then drag or copy the folder titled <strong>...Serum Presets <\/strong>to the following folders based on whether you're on Mac or PC.<\/p><p><\/p><p><strong>Mac:<\/strong><\/p><p><strong>Library\/ Audio\/ Presets\/ Xfer Records\/ Serum Presets\/ Presets\/ User<\/strong><\/p><p><\/p><p><strong>PC:<\/strong><\/p><p><strong>C:\\ Users\\ Documents\\ Xfer\\ Serum Presets\\ Presets\\ User<\/strong><\/p><p><\/p><p>My personal recommendation is to create a new folder titled <strong>Raveyard Sounds<\/strong> Inside the <strong>User<\/strong> folder where you can place all your Raveyard Packs. <\/p><p>After you have copied your serum presets to this location, you can either closed and reopen serum, or your can open the menu and click <strong>Rescan Folders On Disk<\/strong>. After that your presets should be in the <strong>User<\/strong> folder or the folder that you created.<\/p><p><\/p>"
+          }
+        },
+        "48c57c3d-57b0-4e7f-baad-e260954c88c3": {
+          "type": "faq",
+          "settings": {
+            "title": "Copyrights",
+            "text": "<p>Our products are 100% royalty free. That means you can use any of our products in your productions anyway you'd like. <\/p><p><strong>HOWEVER<\/strong>, we do not condone the resale, or use, of any of our products to sell you're own sample packs\/presets.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "55b1506b-c626-44b3-a691-899b603df0da",
+        "0dee5658-8a7a-4199-8f48-9b240ddecdf4",
+        "2f328c1c-e089-48fa-9201-4f844826466b",
+        "48c57c3d-57b0-4e7f-baad-e260954c88c3"
+      ],
+      "settings": {
+        "title": "PRODUCTS",
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 80
+      }
+    },
+    "45b6ce39-201d-41ce-a73f-a5c095f98fce": {
+      "type": "section-faq",
+      "blocks": {
+        "cf53fe02-8720-4f00-91ba-8fd187503809": {
+          "type": "faq",
+          "settings": {
+            "title": "Money-Back Guarantee",
+            "text": "<p>We provide our downloads in a .ZIP or format. To extract the files within, download & install a program like 'WinRar' or '7zip'. Then simply right click the file you have downloaded, and click 'extract here' or in your desired folder.<br\/><\/p>"
+          }
+        },
+        "64018505-e304-46de-9e2e-9757d31d16dc": {
+          "type": "faq",
+          "settings": {
+            "title": "Downloading Products",
+            "text": "<p>We provide our downloads in a .ZIP or format. To extract the files within, download & install a program like 'WinRar' or '7zip'. Then simply right click the file you have downloaded, and click 'extract here' or in your desired folder.<br\/>We provide our downloads in a .ZIP or format. To extract the files within, download & install a program like 'WinRar' or '7zip'. Then simply right click the file you have downloaded, and click 'extract here' or in your desired folder.<br\/><\/p>"
+          }
+        },
+        "6a468b27-caa5-4cee-8024-986fc0f2cc78": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "title": "Download Link Issues Payment",
+            "text": "<p>Download Link<\/p>"
+          }
+        },
+        "cb0c2d9d-f04e-494c-8df7-cba48423b253": {
+          "type": "faq",
+          "settings": {
+            "title": "Payment Options",
+            "text": "<p>Payment Options<\/p>"
+          }
+        },
+        "d29e678e-2552-4f52-9678-a768de3781ed": {
+          "type": "faq",
+          "settings": {
+            "title": "Discount Codes",
+            "text": "<p>Type in your discount code at checkout to instantly apply your discount.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "cf53fe02-8720-4f00-91ba-8fd187503809",
+        "64018505-e304-46de-9e2e-9757d31d16dc",
+        "6a468b27-caa5-4cee-8024-986fc0f2cc78",
+        "cb0c2d9d-f04e-494c-8df7-cba48423b253",
+        "d29e678e-2552-4f52-9678-a768de3781ed"
+      ],
+      "settings": {
+        "title": "MISC",
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "76b1eb28-1061-476d-802b-0c7d8a550d97",
+    "45b6ce39-201d-41ce-a73f-a5c095f98fce"
+  ]
+}

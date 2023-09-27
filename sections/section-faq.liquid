@@ -1,0 +1,133 @@
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }} color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+  <div class="page-width page-width--narrow">
+    {%- if section.settings.title != blank -%}
+      <h2 class="section-faq__title">{{ section.settings.title }}</h2>      
+    {%- endif -%}
+    {% for block in section.blocks %}
+      {%- if block.settings.title != blank -%}
+        <div class="faq-box">
+            <div class="faq-content">
+                <div class="faq-question">
+                    <h3 class="">{{- block.settings.title -}}</h3>
+                    {% render 'icon-plus2' %}
+                    {% render 'icon-minus2' %}
+                </div>
+                {%- if block.settings.text != blank -%}
+                    <div class="faq-answer">{{- block.settings.text -}}</div>
+                {%- endif -%}
+            </div>
+        </div>
+    {%- endif -%}
+    {% endfor %}
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const faqQuestions = document.querySelectorAll('.section-{{ section.id }} .faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+    
+            if (!this.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+    
+                const activeQuestion = document.querySelector('.section-{{ section.id }} .faq-question.active');
+                if (activeQuestion) {
+                    activeQuestion.nextElementSibling.style.maxHeight = null;
+                    activeQuestion.classList.remove('active');
+                }
+    
+                this.classList.add('active');
+            } else {
+                answer.style.maxHeight = null;
+                this.classList.remove('active');
+            }
+        });
+    });
+    
+  });
+</script>
+
+{% schema %}
+  {
+  "name": "Section Faq",
+  "class": "section-faq",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Faq",
+      "type": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Faq"
+    }
+  ]
+}  
+{% endschema %}

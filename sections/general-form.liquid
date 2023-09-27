@@ -1,0 +1,340 @@
+{{ 'form.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <div class="page-width--form">
+    {%- form 'contact', id: 'contactForm', class: 'general-form' -%}
+      {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% render 'icon-success' %}
+          THANKS FOR CONTACTING US
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {% render 'icon-error' %}
+            PLEASE FILL IN THE FIELDS
+          </h2>
+        </div>
+      {%- endif -%}
+
+      {% for block in section.blocks %}
+        {% case block.type %}
+            {% when 'select' %}
+              <div class="form-field {% if forloop.index0 == 0 %}form-field--small{% endif %}">
+                <label class="form-field__label" for="Form-{{ section.id }}-{{ forloop.index0 }}">{{ block.settings.title }}</label>
+                {% render 'icon-arrow-select' %}
+                <select id="Form-{{ section.id }}-{{ forloop.index0 }}" class="form-field__input" name="contact[{{ block.settings.title | handleize | default: 'select' }}]" class="" name="" id="ContactForm-instrument" >
+                 
+                  {% if block.settings.label-dis != blank %}
+                    <option disabled selected value>{{ block.settings.label-dis }}</option>
+                  {% endif %}
+                  {% if block.settings.label-one != blank %}
+                    <option value="{{ block.settings.label-one }}">{{ block.settings.label-one }}</option>
+                  {% endif %}
+                  {% if block.settings.label-two != blank %}
+                    <option value="{{ block.settings.label-two }}">{{ block.settings.label-two }}</option>
+                  {% endif %}
+                  {% if block.settings.label-three != blank %}
+                    <option value="{{ block.settings.label-three }}">{{ block.settings.label-three }}</option>
+                  {% endif %}
+                  {% if block.settings.label-four != blank %}
+                    <option value="{{ block.settings.label-four }}">{{ block.settings.label-four }}</option>
+                  {% endif %}
+                  {% if block.settings.label-five != blank %}
+                    <option value="{{ block.settings.label-five }}">{{ block.settings.label-five }}</option>
+                  {% endif %}
+                  {% if block.settings.label-six != blank %}
+                    <option value="{{ block.settings.label-six }}">{{ block.settings.label-six }}</option>
+                  {% endif %}
+                  {% if block.settings.label-seven != blank %}
+                    <option value="{{ block.settings.label-seven }}">{{ block.settings.label-seven }}</option>
+                  {% endif %}
+                </select>     
+              </div>
+            {% when 'text' %}
+              <div class="form-field">
+                <label class="form-field__label" for="ContactForm-version">{{ block.settings.title }}</label>
+                {% comment %} <small class="contact__field-error">
+                  <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                  <span class="form__message">
+                    {% comment %} {%- render 'icon-error' -%} {% endcomment %}
+                    {{- block.settings.title | capitalize }}
+                    {{ form.errors.messages.email -}}
+                  </span>
+                </small> {% endcomment %}
+                <input
+                  class="form-field__input"
+                  type="text" 
+                  id="Form-{{ section.id }}-{{ forloop.index0 }}" 
+                  name="{{ block.settings.title }}"
+                  placeholder="{{ block.settings.placeholder }}"
+                  aria-required="true"
+                  
+                >      
+              </div>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  var inputs = document.querySelector('#Form-{{ section.id }}-{{ forloop.index0 }}');
+                  inputs.addEventListener('focus', function() {
+                    this.placeholder = '';
+                  });
+                  inputs.addEventListener('blur', function() {
+                    this.placeholder = '{{ block.settings.placeholder }}';
+                  });
+                });
+              </script>
+            {% when 'textarea' %}
+                <div class="form-field">
+                  <label class="form-field__label" for="Form-{{ section.id }}-{{ forloop.index0 }}">{{ block.settings.title }}</label>
+                  {%- if form.errors contains 'body' -%}
+                    <small class="contact__field-error" id="ContactForm-email-error">
+                      <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                      <span class="form__message">
+                        {% comment %} {%- render 'icon-error' -%} {% endcomment %}
+                        {{- form.errors.translated_fields.email | capitalize }}
+                        {{ form.errors.messages.email -}}
+                      </span>
+                    </small>
+                  {%- endif -%}
+                  <textarea
+                    id="Form-{{ section.id }}-{{ forloop.index0 }}"
+                    class="form-field__input--text form-field__input"
+                    {% comment %} name="contacts[{{ block.settings.title | handleize | default: 'textarea' }}]" {% endcomment %}
+                    name="contact[body]"
+                    
+                    placeholder="{{ block.settings.placeholder }}"          
+                  ></textarea> 
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    var inputs = document.querySelector('#Form-{{ section.id }}-{{ forloop.index0 }}');
+                    inputs.addEventListener('focus', function() {
+                      this.placeholder = '';
+                    });
+                    inputs.addEventListener('blur', function() {
+                      this.placeholder = '{{ block.settings.placeholder }}';
+                    });
+                  });
+                </script>
+              {% when 'email' %}
+                  <div class="form-field">
+                    <label class="form-field__label" for="ContactForm-version">{{ block.settings.title }}</label>
+                    {%- if form.errors contains 'email' -%}
+                      <small class="contact__field-error" id="ContactForm-email-error">
+                        <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                        <span class="form__message">
+                          {% comment %} {%- render 'icon-error' -%} {% endcomment %}
+                          {{- form.errors.translated_fields.email | capitalize }}
+                          {{ form.errors.messages.email -}}
+                        </span>
+                      </small>
+                    {%- endif -%}
+                    <input
+                      class="form-field__input"
+                      type="text" 
+                      id="Form-{{ section.id }}-{{ forloop.index0 }}" 
+                      name="contact[email]"
+                      placeholder="{{ block.settings.placeholder }}"
+                    >      
+                  </div>           
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      const inputs = document.querySelector('#Form-{{ section.id }}-{{ forloop.index0 }}');
+                      const emailInput = document.getElementById('Form-{{ section.id }}-{{ forloop.index0 }}');
+
+                      inputs.addEventListener('focus', function() {
+                        this.placeholder = '';
+                      });
+                      inputs.addEventListener('blur', function() {
+                        this.placeholder = '{{ block.settings.placeholder }}';
+                      });
+
+                    }); 
+                  </script>
+        {% endcase %}
+      {% endfor %}
+      <button type="submit" class="button button--submit">
+        SUBMIT
+        {% render 'icon-arrow' %}
+      </button>
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "General Form",
+  "class": "general-form",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "email",
+      "name": "Email",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "default": "Email"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder",
+          "default": "Your Email"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text line",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "default": "Full Name",
+          "info": "Example: Full Name"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder",
+          "default": "Full Name",
+          "info": "Example: Full Name"
+        }
+      ]
+    },
+    {
+      "type": "textarea",
+      "name": "Text area",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Label",
+          "default": "message",
+          "info": "Example: message"
+        },
+        {
+          "type": "textarea",
+          "id": "placeholder",
+          "label": "Placeholder",
+          "default": "Some text here",
+          "info": "Example: Some text here"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "name": "Select dropdown",
+      "settings": [
+        
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "info": "Example: Product"
+        },
+       
+        {
+          "type": "header",
+          "content": "Include up to seven options",
+          "info":  "Options with blank text will not appear."
+        },
+        {
+          "type": "text",
+          "id": "label-dis",
+          "label": "Option placeholder"
+        },
+        {
+          "type": "text",
+          "id": "label-one",
+          "label": "Option one"
+        },
+        {
+          "type": "text",
+          "id": "label-two",
+          "label": "Option two"
+        },
+        {
+          "type": "text",
+          "id": "label-three",
+          "label": "Option three"
+        },
+        {
+          "type": "text",
+          "id": "label-four",
+          "label": "Option four"
+        },
+        {
+          "type": "text",
+          "id": "label-five",
+          "label": "Option five"
+        },
+        {
+          "type": "text",
+          "id": "label-six",
+          "label": "Option six"
+        },
+        {
+          "type": "text",
+          "id": "label-seven",
+          "label": "Option seven"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "General Form"
+    }
+  ]
+}  
+{% endschema %}
