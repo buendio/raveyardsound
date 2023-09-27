@@ -1631,3 +1631,26 @@ a.product__text {
 .product__info-wrapper .accordion .icon-accordion {
   margin-right: 16px;
 }
+.custom-field {
+  display: flex;
+  align-items: center;
+}
+.custom-field:not(:last-child) {
+  margin-bottom: 15px;
+}
+.custom-field__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  object-fit: cover;
+}
+.custom-field__text {
+  width: calc(100% - 36px);
+  margin: 0;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}

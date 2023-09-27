@@ -462,6 +462,16 @@
                   </span>
                 </p>
               {%- endif -%}
+            {%- when 'custom_fields' -%}
+              <div class="custom_fields">
+                {% for item in product.metafields.custom.product_field.value %}
+                  <div class="custom-field">
+                    {{item.img | img_tag: 'custom field image', 'custom-field__img' }}
+                    <p class="custom-field__text">{{item.text}}</p>
+                  </div>        
+                {% endfor %}
+               
+              </div>
             {%- when 'complementary' -%}
               <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                 {%- if recommendations.performed and recommendations.products_count > 0 -%}
@@ -729,6 +739,12 @@
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
       "limit": 1
+    },
+    {
+      "type": "custom_fields",
+      "name": "Custom Fields",
+      "limit": 1,
+      "settings": []
     },
     {
       "type": "price",

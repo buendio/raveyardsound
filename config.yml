@@ -1,7 +1,7 @@
 development:
   password: shptka_e974d9e7a65682e8505e35630f6fc5f4
-  theme_id: 159996346643
+  theme_id: 161000063251
   store: raveyardsound.myshopify.com
   ignore_files:
     # - config/settings_data.json
-    # - settings_data.json
+    # 159996346643
